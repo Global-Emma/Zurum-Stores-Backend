@@ -27,7 +27,10 @@ mongoose.connect(process.env.MONGODB_URL)
 .catch((err) => console.log('MongoDB connection failed:', err));
 
 // connect to redis
-const redisClient = new Redis(process.env.REDIS_URL)
+const redisClient = new Redis(process.env.REDIS_URL, {
+  maxRetriesPerRequest: null,
+  enableReadyCheck: false,
+})
 
 redisClient.on('connect', ()=>{
   console.log('Connection To Redis Successfull')
