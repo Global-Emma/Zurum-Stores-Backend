@@ -154,6 +154,10 @@ const deleteAllCartItems = async (req, res) => {
   try {
     const userId = req.userInfo.userId
     const result = await Cart.deleteMany({ userId });
+    if(result){
+      await Users.findByIdAndUpdate(userId, {cartIds: []});
+    }
+    
     res.status(200).json({
       success: true,
       message: 'All cart items of User deleted successfully',
