@@ -259,7 +259,7 @@ const userLogOut = async (req, res) => {
     if (!refreshToken) {
       return res.status(400).json({
         success: false,
-        message: 'Please Login First'
+        message: 'user Already Logged Out...Please Login Again'
       })
     }
 

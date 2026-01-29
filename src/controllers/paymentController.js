@@ -99,14 +99,14 @@ const callBack = async (req, res) => {
 
     if (response.data.status === 'success') {
       // Redirect user to success page
-      res.redirect(`http://localhost:5173/verify-payment?reference=${reference}`);
+      res.redirect(`https://zurum-stores-frontend.vercel.app/verify-payment?reference=${reference}`);
     } else {
       // Redirect user to failure page
-      res.redirect(`http://localhost:5173/payment-failure`);
+      res.redirect(`https://zurum-stores-frontend.vercel.app/payment-failure`);
     }
   } catch (err) {
     console.error(err);
-    res.redirect(`http://localhost:5173/payment-failure`);
+    res.redirect(`https://zurum-stores-frontend.vercel.app/payment-failure`);
   }
 };
 
