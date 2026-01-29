@@ -11,7 +11,7 @@ if (!process.env.GOOGLE_CLIENT_ID || !process.env.GOOGLE_CLIENT_SECRET) {
       {
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL: "https://zurum-stores-backend.onrender.com/api/users/google-callback",
+        callbackURL: process.env.GOOGLE_CALLBACK_URL,
       },
 
       async (accessToken, refreshToken, profile, done) => {
