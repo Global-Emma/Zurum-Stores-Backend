@@ -22,6 +22,8 @@ require('./utils/passport')
 
 const app = express();
 
+app.set("trust proxy", 1)
+
 mongoose.connect(process.env.MONGODB_URL)
 .then(() => console.log('MongoDB connected Successfully'))
 .catch((err) => console.log('MongoDB connection failed:', err));
