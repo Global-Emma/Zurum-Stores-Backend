@@ -92,24 +92,6 @@ const verifyPayment = async (req, res) => {
   }
 }
 
-const callBack = async (req, res) => {
-  try {
-    const { reference } = req.query;
-    const response = await Paystack.transaction.verify({ reference });
-
-    if (response.data.status === 'success') {
-      // Redirect user to success page
-      res.redirect(`https://zurum-stores-frontend.vercel.app/verify-payment?reference=${reference}`);
-    } else {
-      // Redirect user to failure page
-      res.redirect(`https://zurum-stores-frontend.vercel.app/payment-failure`);
-    }
-  } catch (err) {
-    console.error(err);
-    res.redirect(`https://zurum-stores-frontend.vercel.app/payment-failure`);
-  }
-};
-
 module.exports = {
   initializePayment,
   verifyPayment,
