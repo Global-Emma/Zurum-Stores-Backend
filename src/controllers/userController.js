@@ -137,7 +137,7 @@ const googleAuthCallBack = async (req, res) => {
     }
     await refreshTokenGenerator(user, res);
     const { accessToken } = accessTokenGenerator(user);
-    return res.redirect(`http://localhost:5173/google-success?token=${accessToken}`);
+    return res.redirect(`${process.env.FRONTEND_URL}/google-success?token=${accessToken}`);
   } catch (error) {
     console.log("Error occured during Google login", error);
     return res.status(500).json({
