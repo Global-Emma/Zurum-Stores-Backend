@@ -142,7 +142,7 @@ const googleAuthCallBack = async (req, res) => {
     console.log("Error occured during Google login", error);
     return res.status(500).json({
       success: false,
-      message: "Internal Server Error....please Check your Internet Connection And Try Again Occured"
+      message: "Internal Server Error....please Check your Internet Connection And Try Again"
     });
   }
 }
