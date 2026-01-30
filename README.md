@@ -8,34 +8,34 @@
 
 # 🔗 Live & Related Links
 
-**Frontend App (Vercel):** https://zurum-stores-frontend.vercel.app
-**Frontend Repository:** https://github.com/Global-Emma/zurum-stores-frontend
+* **Frontend App (Vercel):** https://zurum-stores-frontend.vercel.app
+* **Frontend Repository:** https://github.com/Global-Emma/zurum-stores-frontend
 
 ---
 
 # ✨ Features
-Authentication & Security
-Email & password authentication
-Google OAuth login
-JWT authentication via HTTP-only cookies
-Secure logout & password change
-Role-Based Access Control (RBAC)
-User and Admin roles
-Admin-only protected routes
-Role enforcement middleware
-Admin Features
-Product management (create, update, delete)
-Order management & lifecycle updates
-User management
-Orders & Payments
-Order creation & tracking
-Paystack payment verification
-Orders finalized only after successful payment
-Performance & Security
-Redis caching for frequently accessed data
-Rate limiting with Redis
-Environment-variable-based secrets
-Secure CORS configuration
+* Authentication & Security
+* Email & password authentication
+* Google OAuth login
+* JWT authentication via HTTP-only cookies
+* Secure logout & password change
+* Role-Based Access Control (RBAC)
+* User and Admin roles
+* Admin-only protected routes
+* Role enforcement middleware
+* Admin Features
+* Product management (create, update, delete)
+* Order management & lifecycle updates
+* User management
+* Orders & Payments
+* Order creation & tracking
+* Paystack payment verification
+* Orders finalized only after successful payment
+* Performance & Security
+* Redis caching for frequently accessed data
+* Rate limiting with Redis
+* Environment-variable-based secrets
+* Secure CORS configuration
 
 ---
 
@@ -52,6 +52,8 @@ express-rate-limit
 ---
 
 # 📁 Project Structure
+
+```
 backend/
 src/
 ├── controllers/
@@ -61,24 +63,22 @@ src/
 ├── utils/
 ├── server.js
 └── package.json
+```
 
 # 🚀 Deployment
 
-Hosted on Render
-Auto-deploys on GitHub push
-Scales independently from frontend
+* Hosted on Render
+* Auto-deploys on GitHub push
+* Scales independently from frontend
 
 ---
 
 # 🧪 Testing
 
-API tested using Postman
-
-OAuth login verified in production
-
-Redis connectivity verified
-
-Payment flow tested via Paystack
+* API tested using Postman
+* OAuth login verified in production
+* Redis connectivity verified  
+* Payment flow tested via Paystack
 
 ---
 
