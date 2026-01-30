@@ -41,13 +41,13 @@
 
 # 🧱 Tech Stack
 
-Node.js
-Express.js
-MongoDB + Mongoose
-Redis (Redis Cloud)
-JWT
-ioredis
-express-rate-limit
+* Node.js
+* Express.js
+* MongoDB + Mongoose
+* Redis (Redis Cloud)
+* JWT
+* ioredis
+* express-rate-limit
 
 ---
 
@@ -85,4 +85,4 @@ src/
 👨‍💻 Author
 
 **Glory Emmanuel**
-*FullStack Developer*
+**FullStack Developer*
