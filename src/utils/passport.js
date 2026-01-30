@@ -35,7 +35,7 @@ if (!process.env.GOOGLE_CLIENT_ID || !process.env.GOOGLE_CLIENT_SECRET) {
               email: profile.emails[0].value,
               cartIds: [],
               orderIds: [],
-              password: 'google_auth'
+              password: '_password_@.*/'
             });
           }
 
