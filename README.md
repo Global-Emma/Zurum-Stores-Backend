@@ -1,86 +1,108 @@
-# 🛍️ Zurum Stores – Frontend
+⚙️ Zurum Stores – Backend API
 
-This repository contains the **frontend application** for **Zurum Stores**, a modern, fully functional e-commerce platform.
+This repository contains the backend API for Zurum Stores, a fully live, production-grade e-commerce platform.
 
-The frontend consumes the Zurum Stores Backend API and delivers a complete shopping experience with authentication, payments, admin controls, and order tracking.
+The backend handles authentication, authorization (RBAC), payments, orders, caching, rate limiting, and database operations. It powers the live frontend application deployed separately.
 
----
+🔗 Live & Related Links
 
-## 🔗 Live & Related Links
+Backend API (Render): https://zurum-stores-backend.onrender.com
 
-* **Live Website (Vercel):** https://zurum-stores-frontend.vercel.app
-* **Backend Repository:** https://github.com/Global-Emma/zurum-stores-backend
+Frontend App (Vercel): https://zurum-stores-frontend.vercel.app
 
----
+Frontend Repository: https://github.com/
+<your-username>/zurum-stores-frontend
 
-## ✨ Features
+✨ Features
+Authentication & Security
 
-### 👤 User Features
+Email & password authentication
 
-* **User registration & login**
-* **Google OAuth authentication**
-* **Secure logout & password change**
-* **Product browsing & search**
-* **Cart & checkout flow**
-* **Paystack payment integration**
-* **Order history & tracking**
+Google OAuth login
 
-### 🛠️ Admin Features
+JWT authentication via HTTP-only cookies
 
-* **Admin dashboard**
-* **Product management (CRUD)**
-* **Order management**
-* **User role management**
-* **Role-Based Access Control (RBAC)**
+Secure logout & password change
 
----
+Role-Based Access Control (RBAC)
 
-## 🧱 Tech Stack
+User and Admin roles
 
-* **React**
-* **JavaScript**
-* **CSS**
-* **Axios**
-* **React Router**
+Admin-only protected routes
 
----
+Role enforcement middleware
 
-## 🔐 Authentication & Security
+Admin Features
 
-* JWT-based authentication
-* HTTP-only cookies
-* Google OAuth login
-* Protected routes
-* Role-based UI access
+Product management (create, update, delete)
 
----
+Order management & lifecycle updates
 
-## 💳 Payments
+User management
 
-* Integrated with **Paystack**
-* Secure payment initialization
-* Backend payment verification before order creation
+Orders & Payments
 
----
+Order creation & tracking
 
-## 🎨 UI & UX
+Paystack payment verification
 
-* Responsive layout
-* Clean and intuitive product pages
-* Admin dashboard interface
-* Loading and error states
+Orders finalized only after successful payment
 
----
+Performance & Security
 
-## 🚀 Deployment
+Redis caching for frequently accessed data
 
-* Hosted on **Vercel**
-* Environment variables configured in Vercel dashboard
-* Automatically redeploys on GitHub push
+Rate limiting with Redis
 
----
+Environment-variable-based secrets
 
-## 👨‍💻 Author
+Secure CORS configuration
 
-**Glory Emmanuel**
-FullStack Developer
+🧱 Tech Stack
+
+Node.js
+
+Express.js
+
+MongoDB + Mongoose
+
+Redis (Redis Cloud)
+
+JWT
+
+ioredis
+
+express-rate-limit
+
+📁 Project Structure
+backend/
+src/
+├── controllers/
+├── routes/
+├── models/
+├── middlewares/
+├── utils/
+├── server.js
+└── package.json
+
+🚀 Deployment
+
+Hosted on Render
+
+Auto-deploys on GitHub push
+
+Scales independently from frontend
+
+🧪 Testing
+
+API tested using Postman
+
+OAuth login verified in production
+
+Redis connectivity verified
+
+Payment flow tested via Paystack
+
+👨‍💻 Author
+
+Glory Emmanuel
