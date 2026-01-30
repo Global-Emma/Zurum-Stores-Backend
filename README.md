@@ -85,4 +85,4 @@ src/
 👨‍💻 Author
 
 **Glory Emmanuel**
-**FullStack Developer*
+* *FullStack Developer*
