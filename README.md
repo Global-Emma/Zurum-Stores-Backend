@@ -1,80 +1,57 @@
-⚙️ Zurum Stores – Backend API
+# ⚙️ Zurum Stores – Backend API
 
-This repository contains the backend API for Zurum Stores, a fully live, production-grade e-commerce platform.
+**This repository contains the backend API for Zurum Stores, a fully live, production-grade e-commerce platform.**
 
-The backend handles authentication, authorization (RBAC), payments, orders, caching, rate limiting, and database operations. It powers the live frontend application deployed separately.
+**The backend handles authentication, authorization (RBAC), payments, orders, caching, rate limiting, and database operations. It powers the live frontend application deployed separately.**
 
-🔗 Live & Related Links
+---
 
-Backend API (Render): https://zurum-stores-backend.onrender.com
+# 🔗 Live & Related Links
 
-Frontend App (Vercel): https://zurum-stores-frontend.vercel.app
+**Frontend App (Vercel):** https://zurum-stores-frontend.vercel.app
+**Frontend Repository:** https://github.com/Global-Emma/zurum-stores-frontend
 
-Frontend Repository: https://github.com/
-<your-username>/zurum-stores-frontend
+---
 
-✨ Features
+# ✨ Features
 Authentication & Security
-
 Email & password authentication
-
 Google OAuth login
-
 JWT authentication via HTTP-only cookies
-
 Secure logout & password change
-
 Role-Based Access Control (RBAC)
-
 User and Admin roles
-
 Admin-only protected routes
-
 Role enforcement middleware
-
 Admin Features
-
 Product management (create, update, delete)
-
 Order management & lifecycle updates
-
 User management
-
 Orders & Payments
-
 Order creation & tracking
-
 Paystack payment verification
-
 Orders finalized only after successful payment
-
 Performance & Security
-
 Redis caching for frequently accessed data
-
 Rate limiting with Redis
-
 Environment-variable-based secrets
-
 Secure CORS configuration
 
-🧱 Tech Stack
+---
+
+# 🧱 Tech Stack
 
 Node.js
-
 Express.js
-
 MongoDB + Mongoose
-
 Redis (Redis Cloud)
-
 JWT
-
 ioredis
-
 express-rate-limit
 
-📁 Project Structure
+---
+
+# 📁 Project Structure
 backend/
 src/
 ├── controllers/
@@ -85,15 +62,15 @@ src/
 ├── server.js
 └── package.json
 
-🚀 Deployment
+# 🚀 Deployment
 
 Hosted on Render
-
 Auto-deploys on GitHub push
-
 Scales independently from frontend
 
-🧪 Testing
+---
+
+# 🧪 Testing
 
 API tested using Postman
 
@@ -103,6 +80,9 @@ Redis connectivity verified
 
 Payment flow tested via Paystack
 
+---
+
 👨‍💻 Author
 
-Glory Emmanuel
+**Glory Emmanuel**
+*FullStack Developer*
