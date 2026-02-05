@@ -29,7 +29,6 @@ if (!process.env.GOOGLE_CLIENT_ID || !process.env.GOOGLE_CLIENT_SECRET) {
             const names = profile.displayName.split(' ')
             existingUser = await Users.create({
               googleId: profile.id,
-              username: names[0],
               firstname: names[0],
               lastname: names[1],
               email: profile.emails[0].value,
